@@ -154,17 +154,6 @@ const BentoMobileLayout = () => {
         </div>
       </LinkCard>
 
-      {/* Location (div -> SpotlightCard) */}
-      <SpotlightCard className="p-3 h-64 flex flex-col justify-center items-center">
-        <Image
-          src="/NY.webp"
-          alt="NY"
-          width={400}
-          height={200}
-          className="w-full h-full object-cover rounded-2xl"
-        />
-      </SpotlightCard>
-
       {/* Cal */}
       <LinkCard
         href={LINKS.CAL}
@@ -192,6 +181,17 @@ const BentoMobileLayout = () => {
         </div>
       </LinkCard>
 
+      {/* Location (div -> SpotlightCard) */}
+      <SpotlightCard className="p-3 h-64 flex flex-col justify-center items-center">
+        <Image
+          src="/NY.webp"
+          alt="NY"
+          width={400}
+          height={200}
+          className="w-full h-full object-cover rounded-2xl"
+        />
+      </SpotlightCard>
+
       {/* Socials (div -> SpotlightCard) */}
       <SpotlightCard className="md:col-span-2 p-3 h-64 flex flex-col justify-between">
         <h2 className="text-lg font-medium">Find me here</h2>
@@ -203,7 +203,7 @@ const BentoMobileLayout = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 ariaLabel="Open GitHub"
-                className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-80 py-2 text-sm transition"
+                className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-full py-2 text-sm transition"
               >
                 <div className="flex items-center gap-2">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
@@ -223,7 +223,7 @@ const BentoMobileLayout = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 ariaLabel="Open LinkedIn"
-                className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-80 py-2 text-sm transition"
+                className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-full py-2 text-sm transition"
               >
                 <div className="flex items-center gap-2">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
@@ -243,7 +243,7 @@ const BentoMobileLayout = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 ariaLabel="Open X (Twitter)"
-                className="bg-[#262626] rounded-full px-3 w-80 py-2 transition border border-[#404040]"
+                className="bg-[#262626] rounded-full px-3 w-full  py-2 transition border border-[#404040]"
               >
                 <div className="flex items-center gap-2">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">

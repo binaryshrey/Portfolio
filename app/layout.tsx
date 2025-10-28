@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Shreyansh Saurabh",
-  description: "Portfolio - Shreyansh Saurabh",
+  title: "Shreyansh Saurabh",
+  description: "Shreyansh Saurabh - Portfolio",
 };
 
 export default function RootLayout({
