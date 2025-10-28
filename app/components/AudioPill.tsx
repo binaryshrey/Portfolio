@@ -2,14 +2,8 @@
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import WaveSurfer, { WaveSurferOptions } from "wavesurfer.js";
-import { Play, Pause } from "lucide-react";
 import Image from "next/image";
 
-/**
- * Minimal pill-style WaveSurfer player (like the screenshot)
- * Drop in: app/components/AudioPill.tsx
- * Usage: <AudioPill src="/audio/voice.mp3" />
- */
 export default function AudioPill({
   src,
   height = 40,
