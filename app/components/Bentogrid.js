@@ -1,15 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import { Globe, ArrowUpRight } from "lucide-react";
 import LinkCard from "./LinkCard";
+import SpotlightCard from "./SpotlightCard";
 
 const BentoGrid = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 p-4 max-w-6xl mx-auto p-8">
+    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 max-w-6xl mx-auto p-8">
       {/* Substack */}
       <LinkCard
         href="https://substack.com"
-        className="md:col-span-2 md:row-span-1 bg-[#171717] rounded-2xl p-4 h-64 flex justify-between overflow-hidden border border-[#262626] cursor-pointer group"
         ariaLabel="Open substack.com"
+        className="md:col-span-2 md:row-span-1 p-4 h-64 flex justify-between cursor-pointer"
       >
         <div className="flex flex-col justify-between">
           <h2 className="text-xl font-medium">Preaching Mindfulness ☘️</h2>
@@ -38,7 +41,7 @@ const BentoGrid = () => {
       <LinkCard
         href="https://shreyanshsaurabh.com"
         ariaLabel="Open shreyanshsaurabh.com"
-        className="bg-[#171717] rounded-2xl p-4 h-64 flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+        className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -61,20 +64,20 @@ const BentoGrid = () => {
         </div>
       </LinkCard>
 
-      {/* Background */}
-      <div className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col  overflow-hidden border border-[#262626]">
+      {/* Background (div -> SpotlightCard) */}
+      <SpotlightCard className="p-4 h-64 flex flex-col">
         <h2 className="text-lg font-medium">My Background</h2>
         <p className="text-sm text-neutral-400 mt-2">
           NYU freshman from India with experience in working with leading
           fintech companies and startups.
         </p>
-      </div>
+      </SpotlightCard>
 
       {/* Github */}
       <LinkCard
         href="https://github.com/binaryshrey"
         ariaLabel="Open github.com"
-        className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+        className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -95,8 +98,8 @@ const BentoGrid = () => {
         </div>
       </LinkCard>
 
-      {/* Main */}
-      <div className="md:col-span-2 bg-[#171717] rounded-2xl p-4 h-64 overflow-hidden">
+      {/* Main (div -> SpotlightCard) */}
+      <SpotlightCard className="md:col-span-2 p-4 h-64">
         <div className="flex mt-8 gap-4">
           <Image
             src="/profile_pic.webp"
@@ -106,7 +109,7 @@ const BentoGrid = () => {
             className="rounded-2xl mb-3"
           />
           <div className="flex flex-col justify-between mb-4">
-            <div></div>
+            <div />
             <div>
               <h2 className="text-4xl font-medium">Shreyansh Saurabh</h2>
               <p className="text-lg text-normal text-[#808080]">
@@ -115,17 +118,16 @@ const BentoGrid = () => {
             </div>
           </div>
         </div>
-
         <audio controls className="mt-4 w-full">
           <source src="/intro.mp3" type="audio/mpeg" />
         </audio>
-      </div>
+      </SpotlightCard>
 
       {/* Hashnode */}
       <LinkCard
         href="https://hashnode.com"
         ariaLabel="Open hashnode.com"
-        className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+        className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -146,8 +148,8 @@ const BentoGrid = () => {
         </div>
       </LinkCard>
 
-      {/* Location */}
-      <div className="bg-[#171717]rounded-2xl p-4 h-64 flex flex-col justify-center items-center overflow-hidden border border-[#262626]">
+      {/* Location (div -> SpotlightCard) */}
+      <SpotlightCard className="p-4 h-64 flex flex-col justify-center items-center">
         <Image
           src="/NY.webp"
           alt="NY"
@@ -155,13 +157,13 @@ const BentoGrid = () => {
           height={200}
           className="w-full h-80 object-cover rounded-2xl"
         />
-      </div>
+      </SpotlightCard>
 
       {/* Cal */}
       <LinkCard
         href="https://cal.com"
         ariaLabel="Open cal.com"
-        className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+        className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -182,19 +184,19 @@ const BentoGrid = () => {
         </div>
       </LinkCard>
 
-      {/* Socials */}
-      <div className="md:col-span-2 bg-[#171717] rounded-2xl p-4 h-64 flex gap-18 overflow-hidden border border-[#262626]">
+      {/* Socials (div -> SpotlightCard) */}
+      <SpotlightCard className="md:col-span-2 p-4 h-64 flex gap-18">
         <div className="flex flex-col justify-between">
-          <h2 className="text-lg font-medium"></h2>
+          <h2 className="text-lg font-medium" />
           <h2 className="text-lg font-medium">Find me here</h2>
         </div>
         <div className="flex flex-col justify-between">
-          <div></div>
+          <div />
           <div className="flex flex-col gap-2">
             <LinkCard
               href="https://github.com"
               ariaLabel="Open GitHub"
-              className="bg-neutral-800 rounded-4xl px-3 w-80 py-2 text-sm transition border border-[#404040]"
+              className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-80 py-2 text-sm transition"
             >
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
@@ -208,10 +210,11 @@ const BentoGrid = () => {
                 <p>Github</p>
               </div>
             </LinkCard>
+
             <LinkCard
               href="https://linkedin.com"
               ariaLabel="Open LinkedIn"
-              className="bg-neutral-800 rounded-4xl px-3 w-80 py-2 text-sm transition border border-[#404040]"
+              className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-80 py-2 text-sm transition"
             >
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
@@ -245,7 +248,7 @@ const BentoGrid = () => {
             </LinkCard>
           </div>
         </div>
-      </div>
+      </SpotlightCard>
     </div>
   );
 };
