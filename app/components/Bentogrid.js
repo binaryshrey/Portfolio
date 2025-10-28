@@ -1,0 +1,253 @@
+import Image from "next/image";
+import { Globe, ArrowUpRight } from "lucide-react";
+import LinkCard from "./LinkCard";
+
+const BentoGrid = () => {
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 p-4 max-w-6xl mx-auto p-8">
+      {/* Substack */}
+      <LinkCard
+        href="https://substack.com"
+        className="md:col-span-2 md:row-span-1 bg-[#171717] rounded-2xl p-4 h-64 flex justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+        ariaLabel="Open substack.com"
+      >
+        <div className="flex flex-col justify-between">
+          <h2 className="text-xl font-medium">Preaching Mindfulness ☘️</h2>
+          <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+            <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+              <Globe size={16} />
+              <p>substack.com</p>
+              <ArrowUpRight size={16} />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/substack.webp"
+              alt="mindfulness"
+              width={800}
+              height={300}
+              className="w-100 h-56 object-cover"
+            />
+          </div>
+        </div>
+      </LinkCard>
+
+      {/* Portfolio */}
+      <LinkCard
+        href="https://shreyanshsaurabh.com"
+        ariaLabel="Open shreyanshsaurabh.com"
+        className="bg-[#171717] rounded-2xl p-4 h-64 flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+      >
+        <div className="rounded-xl overflow-hidden">
+          <Image
+            src="/banner.webp"
+            alt="portfolio"
+            width={400}
+            height={200}
+            className="w-full h-30 object-cover"
+          />
+        </div>
+        <div>
+          <h2 className="text-lg font-medium">My Portfolio</h2>
+        </div>
+        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+            <Globe size={16} />
+            <p>shreyanshsaurabh.com</p>
+            <ArrowUpRight size={16} />
+          </div>
+        </div>
+      </LinkCard>
+
+      {/* Background */}
+      <div className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col  overflow-hidden border border-[#262626]">
+        <h2 className="text-lg font-medium">My Background</h2>
+        <p className="text-sm text-neutral-400 mt-2">
+          NYU freshman from India with experience in working with leading
+          fintech companies and startups.
+        </p>
+      </div>
+
+      {/* Github */}
+      <LinkCard
+        href="https://github.com/binaryshrey"
+        ariaLabel="Open github.com"
+        className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+      >
+        <div className="rounded-xl overflow-hidden">
+          <Image
+            src="/github.webp"
+            alt="portfolio"
+            width={400}
+            height={200}
+            className="w-full h-30 object-cover"
+          />
+        </div>
+        <h2 className="text-lg font-medium">My Workspace</h2>
+        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+            <Globe size={16} />
+            <p>github.com</p>
+            <ArrowUpRight size={16} />
+          </div>
+        </div>
+      </LinkCard>
+
+      {/* Main */}
+      <div className="md:col-span-2 bg-[#171717] rounded-2xl p-4 h-64 overflow-hidden">
+        <div className="flex mt-8 gap-4">
+          <Image
+            src="/profile_pic.webp"
+            alt="Shreyansh Saurabh"
+            width={120}
+            height={120}
+            className="rounded-2xl mb-3"
+          />
+          <div className="flex flex-col justify-between mb-4">
+            <div></div>
+            <div>
+              <h2 className="text-4xl font-medium">Shreyansh Saurabh</h2>
+              <p className="text-lg text-normal text-[#808080]">
+                MSCE @NYU '27
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <audio controls className="mt-4 w-full">
+          <source src="/intro.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+      {/* Hashnode */}
+      <LinkCard
+        href="https://hashnode.com"
+        ariaLabel="Open hashnode.com"
+        className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+      >
+        <div className="rounded-xl overflow-hidden">
+          <Image
+            src="/blog.webp"
+            alt="blogs"
+            width={400}
+            height={200}
+            className="w-full h-30 object-cover"
+          />
+        </div>
+        <h2 className="text-lg font-medium">My Blogs</h2>
+        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+            <Globe size={16} />
+            <p>hashnode.com</p>
+            <ArrowUpRight size={16} />
+          </div>
+        </div>
+      </LinkCard>
+
+      {/* Location */}
+      <div className="bg-[#171717]rounded-2xl p-4 h-64 flex flex-col justify-center items-center overflow-hidden border border-[#262626]">
+        <Image
+          src="/NY.webp"
+          alt="NY"
+          width={400}
+          height={200}
+          className="w-full h-80 object-cover rounded-2xl"
+        />
+      </div>
+
+      {/* Cal */}
+      <LinkCard
+        href="https://cal.com"
+        ariaLabel="Open cal.com"
+        className="bg-[#171717] rounded-2xl p-4 h-64  flex flex-col justify-between overflow-hidden border border-[#262626] cursor-pointer group"
+      >
+        <div className="rounded-xl overflow-hidden">
+          <Image
+            src="/call.webp"
+            alt="call"
+            width={400}
+            height={200}
+            className="w-full h-30 object-cover"
+          />
+        </div>
+        <h2 className="text-lg font-medium">Let's Talk!</h2>
+        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+            <Globe size={16} />
+            <p>cal.com</p>
+            <ArrowUpRight size={16} />
+          </div>
+        </div>
+      </LinkCard>
+
+      {/* Socials */}
+      <div className="md:col-span-2 bg-[#171717] rounded-2xl p-4 h-64 flex gap-18 overflow-hidden border border-[#262626]">
+        <div className="flex flex-col justify-between">
+          <h2 className="text-lg font-medium"></h2>
+          <h2 className="text-lg font-medium">Find me here</h2>
+        </div>
+        <div className="flex flex-col justify-between">
+          <div></div>
+          <div className="flex flex-col gap-2">
+            <LinkCard
+              href="https://github.com"
+              ariaLabel="Open GitHub"
+              className="bg-neutral-800 rounded-4xl px-3 w-80 py-2 text-sm transition border border-[#404040]"
+            >
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
+                  <Image
+                    src="/github.svg"
+                    alt="GitHub"
+                    width={12}
+                    height={12}
+                  />
+                </span>
+                <p>Github</p>
+              </div>
+            </LinkCard>
+            <LinkCard
+              href="https://linkedin.com"
+              ariaLabel="Open LinkedIn"
+              className="bg-neutral-800 rounded-4xl px-3 w-80 py-2 text-sm transition border border-[#404040]"
+            >
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
+                  <Image
+                    src="/linkedin.svg"
+                    alt="LinkedIn"
+                    width={12}
+                    height={12}
+                  />
+                </span>
+                <p>LinkedIN</p>
+              </div>
+            </LinkCard>
+
+            <LinkCard
+              href="https://x.com"
+              ariaLabel="Open X (Twitter)"
+              className="bg-[#262626] rounded-full px-3 w-80 py-2 transition border border-[#404040]"
+            >
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
+                  <Image
+                    src="/twitter.svg"
+                    alt="Twitter"
+                    width={12}
+                    height={12}
+                  />
+                </span>
+                <p>Twitter - X</p>
+              </div>
+            </LinkCard>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BentoGrid;
