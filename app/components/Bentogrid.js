@@ -5,13 +5,16 @@ import { Globe, ArrowUpRight } from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
 import AudioPill from "./AudioPill";
+import LINKS from "./bentogridLinks";
 
 const BentoGrid = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 max-w-6xl mx-auto p-8">
       {/* Substack */}
       <LinkCard
-        href="https://substack.com"
+        href={LINKS.SUBSTACK}
+        target="_blank"
+        rel="noopener noreferrer"
         ariaLabel="Open substack.com"
         className="md:col-span-2 md:row-span-1 p-4 h-64 flex justify-between cursor-pointer"
       >
@@ -40,7 +43,9 @@ const BentoGrid = () => {
 
       {/* Portfolio */}
       <LinkCard
-        href="https://shreyanshsaurabh.com"
+        href={LINKS.PORTFOLIO}
+        target="_blank"
+        rel="noopener noreferrer"
         ariaLabel="Open shreyanshsaurabh.com"
         className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
@@ -77,7 +82,9 @@ const BentoGrid = () => {
 
       {/* Github */}
       <LinkCard
-        href="https://github.com/binaryshrey"
+        href={LINKS.GITHUB_PROFILE}
+        target="_blank"
+        rel="noopener noreferrer"
         ariaLabel="Open github.com"
         className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
@@ -115,7 +122,7 @@ const BentoGrid = () => {
             <div>
               <h2 className="text-4xl font-medium">Shreyansh Saurabh</h2>
               <p className="text-lg text-normal text-[#808080]">
-                MSCE @NYU '27
+                MSCE @NYU &#39;27
               </p>
             </div>
           </div>
@@ -125,7 +132,9 @@ const BentoGrid = () => {
 
       {/* Hashnode */}
       <LinkCard
-        href="https://hashnode.com"
+        href={LINKS.HASHNODE}
+        target="_blank"
+        rel="noopener noreferrer"
         ariaLabel="Open hashnode.com"
         className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
@@ -161,7 +170,9 @@ const BentoGrid = () => {
 
       {/* Cal */}
       <LinkCard
-        href="https://cal.com"
+        href={LINKS.CAL}
+        target="_blank"
+        rel="noopener noreferrer"
         ariaLabel="Open cal.com"
         className="p-4 h-64 flex flex-col justify-between cursor-pointer"
       >
@@ -174,7 +185,7 @@ const BentoGrid = () => {
             className="w-full h-30 object-cover"
           />
         </div>
-        <h2 className="text-lg font-medium">Let's Talk!</h2>
+        <h2 className="text-lg font-medium">Let&#39;s Talk!</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
             <Globe size={16} />
@@ -194,7 +205,9 @@ const BentoGrid = () => {
           <div />
           <div className="flex flex-col gap-2">
             <LinkCard
-              href="https://github.com"
+              href={LINKS.GITHUB}
+              target="_blank"
+              rel="noopener noreferrer"
               ariaLabel="Open GitHub"
               className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-80 py-2 text-sm transition"
             >
@@ -212,7 +225,9 @@ const BentoGrid = () => {
             </LinkCard>
 
             <LinkCard
-              href="https://linkedin.com"
+              href={LINKS.LINKEDIN}
+              target="_blank"
+              rel="noopener noreferrer"
               ariaLabel="Open LinkedIn"
               className="bg-neutral-800/60 border-[#404040] rounded-4xl px-3 w-80 py-2 text-sm transition"
             >
@@ -230,7 +245,9 @@ const BentoGrid = () => {
             </LinkCard>
 
             <LinkCard
-              href="https://x.com"
+              href={LINKS.X}
+              target="_blank"
+              rel="noopener noreferrer"
               ariaLabel="Open X (Twitter)"
               className="bg-[#262626] rounded-full px-3 w-80 py-2 transition border border-[#404040]"
             >
