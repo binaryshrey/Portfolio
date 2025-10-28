@@ -5,7 +5,7 @@ import { Globe, ArrowUpRight } from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
 import AudioPill from "./AudioPill";
-import LINKS from "./bentogridLinks";
+import LINKS from "./BentoGridLinks";
 
 const BentoDesktopLayout = () => {
   return (

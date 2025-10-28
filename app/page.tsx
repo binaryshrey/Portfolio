@@ -1,4 +1,4 @@
-import BentoGrid from "./components/Bentogrid";
+import BentoGrid from "./components/BentoGrid";
 
 const Home = () => {
   return (
@@ -6,6 +6,6 @@ const Home = () => {
       <BentoGrid />
     </main>
   );
-}
+};
 
 export default Home;
