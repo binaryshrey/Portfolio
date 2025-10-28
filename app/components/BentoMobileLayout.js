@@ -9,9 +9,9 @@ import LINKS from "./bentogridLinks";
 
 const BentoMobileLayout = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 max-w-6xl mx-auto p-4">
+    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 max-w-6xl mx-auto p-2">
       {/* Main (div -> SpotlightCard) */}
-      <SpotlightCard className="md:col-span-2 p-2 h-64">
+      <SpotlightCard className="md:col-span-2 p-3 h-64">
         <div className="flex mt-4 mb-4 gap-4">
           <Image
             src="/profile_pic.webp"
@@ -39,7 +39,7 @@ const BentoMobileLayout = () => {
         target="_blank"
         rel="noopener noreferrer"
         ariaLabel="Open shreyanshsaurabh.com"
-        className="md:col-span-2 md:row-span-1 p-2 h-64 cursor-pointer"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -50,11 +50,9 @@ const BentoMobileLayout = () => {
             className="w-full h-40 object-cover"
           />
         </div>
-        <div>
-          <h2 className="text-xl font-medium mt-2">My Portfolio</h2>
-        </div>
+        <h2 className="text-xl font-medium mt-2">My Portfolio</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
-          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-full text-white">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
             <Globe size={12} />
             <p>shreyanshsaurabh.com</p>
             <ArrowUpRight size={12} />
@@ -68,7 +66,7 @@ const BentoMobileLayout = () => {
         target="_blank"
         rel="noopener noreferrer"
         ariaLabel="Open substack.com"
-        className="md:col-span-2 md:row-span-1 p-2 h-64 cursor-pointer"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -82,7 +80,7 @@ const BentoMobileLayout = () => {
         <div>
           <h2 className="text-xl font-medium mt-2">Preaching Mindfulness ☘️</h2>
           <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
-            <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-full text-white">
+            <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
               <Globe size={12} />
               <p className="text-sm">substack.com</p>
               <ArrowUpRight size={12} />
@@ -93,7 +91,7 @@ const BentoMobileLayout = () => {
       </LinkCard>
 
       {/* Background (div -> SpotlightCard) */}
-      <SpotlightCard className="p-2 h-64 flex flex-col">
+      <SpotlightCard className="p-3 h-64 flex flex-col">
         <h2 className="text-xl font-medium">My Background</h2>
         <p className="text-sm text-neutral-400 mt-4">
           NYU graduate with 3+ years of professional & entrepreneurial
@@ -108,7 +106,7 @@ const BentoMobileLayout = () => {
         target="_blank"
         rel="noopener noreferrer"
         ariaLabel="Open github.com"
-        className="p-2 h-64 flex flex-col justify-between cursor-pointer"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -135,7 +133,7 @@ const BentoMobileLayout = () => {
         target="_blank"
         rel="noopener noreferrer"
         ariaLabel="Open hashnode.com"
-        className="p-2 h-64 flex flex-col justify-between cursor-pointer"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -146,7 +144,7 @@ const BentoMobileLayout = () => {
             className="w-full h-40 object-cover"
           />
         </div>
-        <h2 className="text-xl font-medium">My Blogs</h2>
+        <h2 className="text-xl font-medium mt-2">My Blogs</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
             <Globe size={16} />
@@ -157,13 +155,13 @@ const BentoMobileLayout = () => {
       </LinkCard>
 
       {/* Location (div -> SpotlightCard) */}
-      <SpotlightCard className="p-2 h-64 flex flex-col justify-center items-center">
+      <SpotlightCard className="p-3 h-64 flex flex-col justify-center items-center">
         <Image
           src="/NY.webp"
           alt="NY"
           width={400}
           height={200}
-          className="w-full h-60 object-cover rounded-2xl"
+          className="w-full h-full object-cover rounded-2xl"
         />
       </SpotlightCard>
 
@@ -173,7 +171,7 @@ const BentoMobileLayout = () => {
         target="_blank"
         rel="noopener noreferrer"
         ariaLabel="Open cal.com"
-        className="p-2 h-64 flex flex-col justify-between cursor-pointer"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
       >
         <div className="rounded-xl overflow-hidden">
           <Image
@@ -195,7 +193,7 @@ const BentoMobileLayout = () => {
       </LinkCard>
 
       {/* Socials (div -> SpotlightCard) */}
-      <SpotlightCard className="md:col-span-2 p-2 h-64 flex flex-col justify-between">
+      <SpotlightCard className="md:col-span-2 p-3 h-64 flex flex-col justify-between">
         <h2 className="text-lg font-medium">Find me here</h2>
         <div>
           <div>
