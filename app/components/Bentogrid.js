@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Globe, ArrowUpRight } from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
+import AudioPill from "./AudioPill";
 
 const BentoGrid = () => {
   return (
@@ -68,8 +69,9 @@ const BentoGrid = () => {
       <SpotlightCard className="p-4 h-64 flex flex-col">
         <h2 className="text-lg font-medium">My Background</h2>
         <p className="text-sm text-neutral-400 mt-2">
-          NYU freshman from India with experience in working with leading
-          fintech companies and startups.
+          NYU graduate with 3+ years of professional & entrepreneurial
+          experience with leading Fortune-100 companies and emerging tech
+          startups
         </p>
       </SpotlightCard>
 
@@ -118,9 +120,7 @@ const BentoGrid = () => {
             </div>
           </div>
         </div>
-        <audio controls className="mt-4 w-full">
-          <source src="/intro.mp3" type="audio/mpeg" />
-        </audio>
+        <AudioPill src="/hello.mp3" />
       </SpotlightCard>
 
       {/* Hashnode */}
