@@ -33,7 +33,7 @@ const MobileLayout = ({ filter }) => {
       </main>
 
       {/* Footer */}
-      <footer className="mt-auto bg-[#111] py-4">
+      <footer className="mt-auto py-4">
         <Footer />
       </footer>
     </div>
