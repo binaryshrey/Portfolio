@@ -17,7 +17,7 @@ const NavBar = () => {
   return (
     <>
       {/* Top section */}
-      <div className="pt-12 px-5 flex flex-col gap-4">
+      <div className="pt-12 px-4 flex flex-col gap-4">
         {/* Profile + Hamburger (mobile only) */}
         <div className="flex justify-between ">
           <ProfileImage />

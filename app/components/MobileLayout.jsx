@@ -13,7 +13,7 @@ const MobileLayout = ({ filter }) => {
       <NavBar />
 
       {/* Main content area */}
-      <main className="flex-1 px-4 py-6 space-y-4">
+      <main className="flex-1  py-6 space-y-4">
         {filter === "About" ? (
           <AboutContent />
         ) : (
@@ -33,7 +33,7 @@ const MobileLayout = ({ filter }) => {
       </main>
 
       {/* Footer */}
-      <footer className="mt-auto bg-[#111] py-4 border-t border-gray-800">
+      <footer className="mt-auto bg-[#111] py-4">
         <Footer />
       </footer>
     </div>

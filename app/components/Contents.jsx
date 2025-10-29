@@ -29,7 +29,7 @@ const Contents = ({ content }) => {
   } = content;
 
   return (
-    <div data-aos="fade-up" className="my-12 mx-3 md:mx-12">
+    <div data-aos="fade-up" className=" md:my-12 mx-3 md:mx-12">
       {/* Card Container */}
       <div className="bg-[#202020] rounded-xl overflow-hidden shadow-md transition-transform">
         {/* Image */}
