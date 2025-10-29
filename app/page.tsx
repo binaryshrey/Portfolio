@@ -1,6 +1,6 @@
 import BentoGrid from "./components/BentoGrid";
 
-const Home = () => {
+const Base = () => {
   return (
     <main className="min-h-screen flex items-center justify-center">
       <BentoGrid />
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Base;

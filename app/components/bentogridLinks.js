@@ -3,7 +3,7 @@
 
 export const LINKS = {
   SUBSTACK: "https://shreyanshsaurabh.substack.com/about",
-  PORTFOLIO: "https://shreyanshsaurabh.com",
+  PORTFOLIO: "https://shreyanshsaurabh.com/home",
   GITHUB_PROFILE: "https://github.com/binaryshrey",
   HASHNODE: "https://shreyanshsaurabh.hashnode.dev/",
   CAL: "https://cal.com/shreyanshsaurabh",
