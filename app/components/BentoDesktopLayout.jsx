@@ -127,7 +127,7 @@ const BentoDesktopLayout = () => {
             </div>
           </div>
         </div>
-        <AudioPill src="/hello.mp3" />
+        <AudioPill src="/me.wav" />
       </SpotlightCard>
 
       {/* Hashnode */}

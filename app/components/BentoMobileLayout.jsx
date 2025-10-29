@@ -30,7 +30,7 @@ const BentoMobileLayout = () => {
             </div>
           </div>
         </div>
-        <AudioPill src="/hello.mp3" height={24} />
+        <AudioPill src="/me.wav" height={24} />
       </SpotlightCard>
 
       {/* Portfolio */}
