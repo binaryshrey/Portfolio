@@ -8,11 +8,9 @@ import Footer from "./Footer";
 
 const MobileLayout = ({ filter }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0a0a0a] text-white">
+    <div className="flex flex-col min-h-screen text-white">
       {/* Navbar */}
-      <header className="sticky top-0 z-50 bg-[#111] shadow-md">
-        <NavBar />
-      </header>
+      <NavBar />
 
       {/* Main content area */}
       <main className="flex-1 px-4 py-6 space-y-4">
