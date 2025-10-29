@@ -1,318 +1,332 @@
 {
-    "name": "Shreyansh Saurabh",
-	"profileImage": "https://avatars.githubusercontent.com/u/35399542?v=4",
-    "about":  "Fullstack Software Developer",
-    "resume": "https://docs.google.com/document/d/1uSPGzj1TJqylTwyzlViAIIZ4WpgJAXvk/edit?usp=sharing&ouid=116878050398245712019&rtpof=true&sd=true",
-    "socials" : {
-        "LinkedIn" : "https://in.linkedin.com/in/shreyanshsaurabh",
-        "Github" : "https://github.com/binaryshrey",
-        "Twitter" : "https://twitter.com/binaryShrey",
-        "Hashnode" : "https://shreyanshsaurabh.hashnode.dev/",
-        "Substack" : "https://substack.com/@shreyanshsaurabh",
-        "Spotify" : "https://open.spotify.com/playlist/5iXLfeB49XFrpI27b8xBGb?si=bedb54fead154563"
-    },
-    "description1": "Thrilled to have you here! I'm self-driven and certified fullstack developer with 3+ years of industry experience, specializing in the development of intricate webb and mobile applications. I've a proficiency in leveraging JavaScript and Python language with agile methodology to create sophisticated and innovative solutions.",
-    "description2": "Throughout my journey as a fullstack developer, my unwavering passion for learning and staying abreast with emerging technologies, serves as the foundation of my success. My expertise extends beyond JavaScript and Python languages to encompass a diverse array of cutting-edge technologies. Among these are React, FastAPI and SQLite frameworks that stands prominent, as they serve as indispensable tools in crafting seamless and feature-rich web and mobile applications.",
-    "description3": "My self-driven nature always pushes me to tackle intricate challenges with tenacity, consistently delivering solutions that exceed expectations. By adhering to agile practices, I adeptly navigate the development process, ensuring a seamless and collaborative workflow, while continuously refining my craft to deliver top-notch applications that leave a lasting impact on users.",
-    "description4": "",
+  "name": "Shreyansh Saurabh",
+  "profileImage": "https://avatars.githubusercontent.com/u/35399542?v=4",
+  "about": "Fullstack Software Developer",
+  "resume": "https://docs.google.com/document/d/1uSPGzj1TJqylTwyzlViAIIZ4WpgJAXvk/edit?usp=sharing&ouid=116878050398245712019&rtpof=true&sd=true",
+  "socials": {
+    "LinkedIn": "https://in.linkedin.com/in/shreyanshsaurabh",
+    "Github": "https://github.com/binaryshrey",
+    "Twitter": "https://twitter.com/binaryShrey",
+    "Hashnode": "https://shreyanshsaurabh.hashnode.dev/",
+    "Substack": "https://substack.com/@shreyanshsaurabh",
+    "Spotify": "https://open.spotify.com/playlist/5iXLfeB49XFrpI27b8xBGb?si=bedb54fead154563"
+  },
+  "description1": "Thrilled to have you here! I'm MS in Computer Engineering graduate with a minor in Machine Learning @NYU and a certified full-stack developer with 3+ years of professional & entrepreneurial experience with leading Fortune-100 companies and emerging tech startups. Proficient in Python, JavaScript, React, FastAPI, PostgreSQL and AWS. Passionate about solving complex problems and building impactful web/mobile applications using agile methodologies with a strong interest in leveraging technology to drive innovation in financial services including trading systems, data-driven risk platforms and digital financial products.",
+  "description2": "I thrive on tackling complex challenges with analytical rigor, creativity and tenacity. With a collaborative mindset, I work effectively within cross-functional teams to streamline development workflows, ensure clear communication and consistently deliver outstanding outcomes. Combining technical excellence with thoughtful design, I create applications that are both functional and impactful, delivering meaningful user experiences while pushing the boundaries of technology.",
+  "description3": "",
+  "description4": "",
 
-    "contents" : [
-	    {
-            "name":"Bubbles",
-            "description" : "Instantly Share & Celebrate Your Magical Moments - with Bubbles album links that pops after 5 mins.",
-            "link" : "https://bubbles-inc.vercel.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/bubbles.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/bubbles.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Bubbles"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://bubbles-inc.vercel.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "July - 2024",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
+  "contents": [
+    {
+      "name": "Bubbles",
+      "description": "Instantly Share & Celebrate Your Magical Moments - with Bubbles album links that pops after 5 mins.",
+      "link": "https://bubbles-inc.vercel.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/bubbles.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/bubbles.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Bubbles"
         },
         {
-            "name":"Blogosaurus",
-            "description" : "Publish blogs at the speed of light : Instantly share your thoughts with our blazing-fast blogging platform!",
-            "link" : "https://blogosaurus.vercel.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/blogo.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/blogo-mobile.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Blogosaurus"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://blogosaurus.vercel.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "June - 2024",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
-        },
-        {
-            "name":"Chronos",
-            "description" : "A minimalistic kanban board app : project management and issue tracking for everyone!",
-            "link" : "https://chronos-inc.vercel.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/chronos.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/chronos-mobile.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Chronos"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://chronos-inc.vercel.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "June - 2024",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
-        },
-        {
-            "name":"Profolyo",
-            "description" : "The Fastest Way To Build Professional Portfolios",
-            "link" : "https://www.profolyo.me/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/profolyo.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/profolyo-mobile.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Profolyo"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://www.profolyo.me/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "July - 2024",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
-        },
-        {
-            "name":"Avatars AI",
-            "description" : "Your Personalised AI Chat Companion With 50+ Avatars Over 10+ Categories - Powered by ChatGPT, GPT4 & Bard AI",
-            "link" : "https://avatarsai-app.netlify.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/avatars-ai.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/avatars-ai.webp",
-            "tags" : [{
-                    "name": "ProductHunt",
-                    "uri" : "https://www.producthunt.com/products/avatars-ai#avatars-ai"
-                },
-                {
-                    "name": "Play Store",
-                    "uri" : "https://play.google.com/store/apps/details?id=chat.avatars.ai"
-                },
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Avatars-AI"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://avatarsai-app.netlify.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "May - 2023",
-            "readTime" : null,
-            "stars" : null,
-            "downloads": "3000+"
-        },
-
-        {
-            "name":"WeatherMan",
-            "description" : "Stay ahead of the storm with our minimalist weather tracker app and get notified for weather alerts!",
-            "link" : "https://weatherman-zenstudio.netlify.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/weatherman.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/weatherman.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/WeatherMan"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://weatherman-zenstudio.netlify.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "June - 2023",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
-        },
-        {
-            "name":"NotesBay",
-            "description" : "Notes • Todos • AI Writing Assistant - Powered By ChatGPT & GPT4 AI",
-            "link" : "https://notesbay.netlify.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/notesbay.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/notesbay.webp",
-            "tags" : [
-                {
-                    "name": "Play Store",
-                    "uri" : "https://play.google.com/store/apps/details?id=dev.shreyansh.notesbay.notes.ai.chat.gpt.chatbot"
-                },
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/NotesBay"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://notesbay.netlify.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "Apr - 2023",
-            "readTime" : null,
-            "stars" : null,
-            "downloads": "1000+"
-
-        },
-
-        {
-            "name":"Pokédex",
-            "description" : "Introducing Pokédex : Explore 800+ pokemon(s) across all 8 generations and elevate your Pokemon Trainer Level with Poké-Quiz and Poké-Scan features",
-            "link" : "https://pokedex-zenstudio.netlify.app/",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/pokedex.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/pokedex.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Pokedex"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://pokedex-zenstudio.netlify.app/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "July - 2023",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
-        },
-
-
-        {
-            "name":"REACT-101",
-            "description" : "React Fundamentals: A Beginner's Handbook",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/react_blog.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/react_blog.webp",
-            "tags" : [{
-                    "name": "React",
-                    "uri" : "https://react.dev/"
-                },
-                {
-                    "name": "Hashnode",
-                    "uri" : "https://shreyanshsaurabh.hashnode.dev/react-101"
-                }],
-            "type" : "Blog",
-            "link" : "https://shreyanshsaurabh.hashnode.dev/react-101",
-            "publishedOn" : "June - 2024",
-            "readTime" : "8",
-            "stars" : null,
-            "downloads": null
-        },
-        {
-            "name":"Beginner's Guide to Understanding the Internet",
-            "description" : "How does the Internet Work?",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/internet_blog.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/internet_blog.webp",
-            "tags" : [{
-                    "name": "React",
-                    "uri" : "https://react.dev/"
-                },
-                {
-                    "name": "Hashnode",
-                    "uri" : "https://shreyanshsaurabh.hashnode.dev/beginners-guide-to-understanding-the-internet"
-                }],
-            "type" : "Blog",
-            "link" : "https://shreyanshsaurabh.hashnode.dev/beginners-guide-to-understanding-the-internet",
-            "publishedOn" : "June - 2024",
-            "readTime" : "6",
-            "stars" : null,
-            "downloads": null
-        },
-        {
-            "name":"Dice",
-            "description" : "A simple and intuitive dice-roller app",
-            "link" : "https://github.com/binaryshrey/Dice",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Dice/main/banner_dice.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Dice/main/banner_dice_mobile.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Dice"
-                }],
-            "type" : "Project",
-            "publishedOn" : "Jan - 2022",
-            "readTime" : null,
-            "stars" : "30+",
-            "downloads": null
-        },
-        {
-            "name":"Awesome Android Open-Source Projects",
-            "description" : "A curated list of awesome android projects by open-source contributors",
-            "link" : "https://github.com/binaryshrey/Awesome-Android-Open-Source-Projects",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/aaosp.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/aaosp.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Awesome-Android-Open-Source-Projects"
-                }],
-            "type" : "Project",
-            "publishedOn" : "Jan - 2021",
-            "readTime" : null,
-            "stars" : "800+",
-            "downloads": null
-        },
-        {
-            "name":"DeepFlick",
-            "description" : "DeepFlick : Popular Movies app made as Part of Udacity's Android Nanodegree",
-            "link" : "https://github.com/binaryshrey/Deepflick",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Deepflick/master/Overview.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Deepflick/master/Overview_Mobile.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Deepflick"
-                }],
-            "type" : "Project",
-            "publishedOn" : "Mar - 2022",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
-        },
-        {
-            "name":"Memory Game",
-            "description" : "An intuitive game that tests your ability to match the set of 8 cards as fast as possible.",
-            "link" : "https://github.com/binaryshrey/Memory-Game",
-            "imageURI" : "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/memory_game.webp",
-            "imageURIMobile":"https://raw.githubusercontent.com/binaryshrey/Portfolio/main/assets/mobile/memory_game.webp",
-            "tags" : [
-                {
-                    "name": "GitHub",
-                    "uri" : "https://github.com/binaryshrey/Memory-Game"
-                },
-                {
-                    "name": "Web",
-                    "uri" : "https://binaryshrey.github.io/Memory-Game/"
-                }],
-            "type" : "Project",
-            "publishedOn" : "Oct - 2018",
-            "readTime" : null,
-            "stars" : "5+",
-            "downloads": null
+          "name": "Web",
+          "uri": "https://bubbles-inc.vercel.app/"
         }
-    ]
+      ],
+      "type": "Project",
+      "publishedOn": "July - 2024",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "Blogosaurus",
+      "description": "Publish blogs at the speed of light : Instantly share your thoughts with our blazing-fast blogging platform!",
+      "link": "https://blogosaurus.vercel.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/blogo.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/blogo-mobile.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Blogosaurus"
+        },
+        {
+          "name": "Web",
+          "uri": "https://blogosaurus.vercel.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "June - 2024",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "Chronos",
+      "description": "A minimalistic kanban board app : project management and issue tracking for everyone!",
+      "link": "https://chronos-inc.vercel.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/chronos.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/chronos-mobile.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Chronos"
+        },
+        {
+          "name": "Web",
+          "uri": "https://chronos-inc.vercel.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "June - 2024",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "Profolyo",
+      "description": "The Fastest Way To Build Professional Portfolios",
+      "link": "https://www.profolyo.me/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/profolyo.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/profolyo-mobile.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Profolyo"
+        },
+        {
+          "name": "Web",
+          "uri": "https://www.profolyo.me/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "July - 2024",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "Avatars AI",
+      "description": "Your Personalised AI Chat Companion With 50+ Avatars Over 10+ Categories - Powered by ChatGPT, GPT4 & Bard AI",
+      "link": "https://avatarsai-app.netlify.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/avatars-ai.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/avatars-ai.webp",
+      "tags": [
+        {
+          "name": "ProductHunt",
+          "uri": "https://www.producthunt.com/products/avatars-ai#avatars-ai"
+        },
+        {
+          "name": "Play Store",
+          "uri": "https://play.google.com/store/apps/details?id=chat.avatars.ai"
+        },
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Avatars-AI"
+        },
+        {
+          "name": "Web",
+          "uri": "https://avatarsai-app.netlify.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "May - 2023",
+      "readTime": null,
+      "stars": null,
+      "downloads": "4000+"
+    },
 
+    {
+      "name": "WeatherMan",
+      "description": "Stay ahead of the storm with our minimalist weather tracker app and get notified for weather alerts!",
+      "link": "https://weatherman-zenstudio.netlify.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/weatherman.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/weatherman.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/WeatherMan"
+        },
+        {
+          "name": "Web",
+          "uri": "https://weatherman-zenstudio.netlify.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "June - 2023",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "NotesBay",
+      "description": "Notes • Todos • AI Writing Assistant - Powered By ChatGPT & GPT4 AI",
+      "link": "https://notesbay.netlify.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/notesbay.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/notesbay.webp",
+      "tags": [
+        {
+          "name": "Play Store",
+          "uri": "https://play.google.com/store/apps/details?id=dev.shreyansh.notesbay.notes.ai.chat.gpt.chatbot"
+        },
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/NotesBay"
+        },
+        {
+          "name": "Web",
+          "uri": "https://notesbay.netlify.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Apr - 2023",
+      "readTime": null,
+      "stars": null,
+      "downloads": "1000+"
+    },
+
+    {
+      "name": "Pokédex",
+      "description": "Introducing Pokédex : Explore 800+ pokemon(s) across all 8 generations and elevate your Pokemon Trainer Level with Poké-Quiz and Poké-Scan features",
+      "link": "https://pokedex-zenstudio.netlify.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/pokedex.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/pokedex.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Pokedex"
+        },
+        {
+          "name": "Web",
+          "uri": "https://pokedex-zenstudio.netlify.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "July - 2023",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+
+    {
+      "name": "REACT-101",
+      "description": "React Fundamentals: A Beginner's Handbook",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/react_blog.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/react_blog.webp",
+      "tags": [
+        {
+          "name": "React",
+          "uri": "https://react.dev/"
+        },
+        {
+          "name": "Hashnode",
+          "uri": "https://shreyanshsaurabh.hashnode.dev/react-101"
+        }
+      ],
+      "type": "Blog",
+      "link": "https://shreyanshsaurabh.hashnode.dev/react-101",
+      "publishedOn": "June - 2024",
+      "readTime": "8",
+      "stars": null,
+      "downloads": null
+    },
+    {
+      "name": "Beginner's Guide to Understanding the Internet",
+      "description": "How does the Internet Work?",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/internet_blog.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/internet_blog.webp",
+      "tags": [
+        {
+          "name": "React",
+          "uri": "https://react.dev/"
+        },
+        {
+          "name": "Hashnode",
+          "uri": "https://shreyanshsaurabh.hashnode.dev/beginners-guide-to-understanding-the-internet"
+        }
+      ],
+      "type": "Blog",
+      "link": "https://shreyanshsaurabh.hashnode.dev/beginners-guide-to-understanding-the-internet",
+      "publishedOn": "June - 2024",
+      "readTime": "6",
+      "stars": null,
+      "downloads": null
+    },
+    {
+      "name": "Dice",
+      "description": "A simple and intuitive dice-roller app",
+      "link": "https://github.com/binaryshrey/Dice",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Dice/main/banner_dice.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Dice/main/banner_dice_mobile.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Dice"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Jan - 2022",
+      "readTime": null,
+      "stars": "30+",
+      "downloads": null
+    },
+    {
+      "name": "Awesome Android Open-Source Projects",
+      "description": "A curated list of awesome android projects by open-source contributors",
+      "link": "https://github.com/binaryshrey/Awesome-Android-Open-Source-Projects",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/aaosp.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/aaosp.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Awesome-Android-Open-Source-Projects"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Jan - 2021",
+      "readTime": null,
+      "stars": "1100+",
+      "downloads": null
+    },
+    {
+      "name": "DeepFlick",
+      "description": "DeepFlick : Popular Movies app made as Part of Udacity's Android Nanodegree",
+      "link": "https://github.com/binaryshrey/Deepflick",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Deepflick/master/Overview.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Deepflick/master/Overview_Mobile.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Deepflick"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Mar - 2022",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "Memory Game",
+      "description": "An intuitive game that tests your ability to match the set of 8 cards as fast as possible.",
+      "link": "https://github.com/binaryshrey/Memory-Game",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/memory_game.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/Portfolio-v1/main/assets/mobile/memory_game.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Memory-Game"
+        },
+        {
+          "name": "Web",
+          "uri": "https://binaryshrey.github.io/Memory-Game/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Oct - 2018",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    }
+  ]
 }
