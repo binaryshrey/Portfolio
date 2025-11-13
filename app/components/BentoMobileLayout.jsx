@@ -33,33 +33,6 @@ const BentoMobileLayout = () => {
         <AudioPill src="/me.wav" height={24} />
       </SpotlightCard>
 
-      {/* Portfolio */}
-      <LinkCard
-        href={LINKS.PORTFOLIO}
-        target="_blank"
-        rel="noopener noreferrer"
-        ariaLabel="Open shreyanshsaurabh.com"
-        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
-      >
-        <div className="rounded-xl overflow-hidden">
-          <Image
-            src="/banner.webp"
-            alt="portfolio"
-            width={400}
-            height={200}
-            className="w-full h-40 object-cover"
-          />
-        </div>
-        <h2 className="text-xl font-medium mt-2">My Portfolio</h2>
-        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
-          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-            <Globe size={12} />
-            <p>shreyanshsaurabh.com</p>
-            <ArrowUpRight size={12} />
-          </div>
-        </div>
-      </LinkCard>
-
       {/* Substack */}
       <LinkCard
         href={LINKS.SUBSTACK}
@@ -90,13 +63,40 @@ const BentoMobileLayout = () => {
         <div></div>
       </LinkCard>
 
+      {/* Portfolio */}
+      <LinkCard
+        href={LINKS.PORTFOLIO}
+        target="_blank"
+        rel="noopener noreferrer"
+        ariaLabel="Open shreyanshsaurabh.com"
+        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
+      >
+        <div className="rounded-xl overflow-hidden">
+          <Image
+            src="/banner.webp"
+            alt="portfolio"
+            width={400}
+            height={200}
+            className="w-full h-40 object-cover"
+          />
+        </div>
+        <h2 className="text-xl font-medium mt-2">My Portfolio</h2>
+        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+            <Globe size={12} />
+            <p>shreyanshsaurabh.com</p>
+            <ArrowUpRight size={12} />
+          </div>
+        </div>
+      </LinkCard>
+
       {/* Background (div -> SpotlightCard) */}
       <SpotlightCard className="p-3 h-64 flex flex-col">
         <h2 className="text-xl font-medium">My Background</h2>
         <p className="text-sm text-neutral-400 mt-4">
-          NYU graduate with 3+ years of professional & entrepreneurial
+          New York University graduate with 3+ years of professional & entrepreneurial
           experience with leading Fortune-100 companies and emerging tech
-          startups
+          startups.
         </p>
       </SpotlightCard>
 
