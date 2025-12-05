@@ -1,15 +1,50 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { Globe, ArrowUpRight } from "lucide-react";
+import { Globe, ArrowUpRight, VolumeOff, Volume2 } from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
 import AudioPill from "./AudioPill";
 import LINKS from "./BentoGridLinks";
 
 const BentoDesktopLayout = () => {
+  const [isMuted, setIsMuted] = useState(true);
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    // Create audio element on component mount
+    audioRef.current = new Audio("/song.mp3");
+    audioRef.current.loop = true;
+    audioRef.current.muted = true;
+
+    // Cleanup on unmount
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  const toggleMute = () => {
+    if (audioRef.current) {
+      // Start playing if not already playing (handles first interaction)
+      if (audioRef.current.paused) {
+        audioRef.current.play().catch((error) => {
+          console.error("Audio playback failed:", error);
+        });
+      }
+
+      // Toggle mute state based on current audio muted property
+      const newMutedState = !audioRef.current.muted;
+      audioRef.current.muted = newMutedState;
+      setIsMuted(newMutedState);
+    }
+  };
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 max-w-6xl mx-auto p-8">
+    <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-2 max-w-6xl mx-auto p-4">
       {/* Substack */}
       <LinkCard
         href={LINKS.SUBSTACK}
@@ -158,14 +193,52 @@ const BentoDesktopLayout = () => {
       </LinkCard>
 
       {/* Location (div -> SpotlightCard) */}
-      <SpotlightCard className="p-4 h-64 flex flex-col justify-center items-center">
-        <Image
-          src="/NY.webp"
-          alt="NY"
-          width={400}
-          height={200}
-          className="w-full h-80 object-cover rounded-2xl"
-        />
+      <SpotlightCard className="p-4 h-64 overflow-hidden">
+        <div className="flex flex-col justify-start items-start h-full overflow-hidden">
+          <div className="relative self-center">
+            <Image
+              src="/vinyl.webp"
+              alt="vinyl"
+              width={120}
+              height={120}
+              className="animate-[spin_4s_linear_infinite]"
+            />
+            <Image
+              src="/piano.webp"
+              alt="piano"
+              width={48}
+              height={48}
+              className="absolute top-9 left-9"
+            />
+          </div>
+          <h2 className="text-lg font-medium pt-3">Now Listening</h2>
+          <h2 className="text-sm font-medium text-zinc-400">
+            Comptine d'un autre été, l'après-midi
+          </h2>
+          <div className="text-sm mt-3 opacity-70 group-hover:opacity-100 transition flex gap-2">
+            <div
+              onClick={() =>
+                window.open(
+                  "https://open.spotify.com/track/14rZjW3RioG7WesZhYESso?si=f3ae9d652f364c38",
+                  "_blank"
+                )
+              }
+              className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white hover:cursor-pointer"
+            >
+              <Globe size={16} />
+              <p>spotify.com</p>
+              <ArrowUpRight size={16} />
+            </div>
+            <div>
+              <div
+                onClick={toggleMute}
+                className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white hover:cursor-pointer"
+              >
+                {isMuted ? <VolumeOff size={20} /> : <Volume2 size={20} />}
+              </div>
+            </div>
+          </div>
+        </div>
       </SpotlightCard>
 
       {/* Cal */}
