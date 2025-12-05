@@ -1,6 +1,6 @@
 # Portfolio ![Vercel Status](https://deploy-badge.vercel.app/vercel/shreyanshsaurabh-portfolio)
 
-A minimalistic portfolio site built with NextJS - [View](https://shreyanshsaurabh.vercel.app/)
+A minimalistic portfolio site built with NextJS - [View](https://shreyanshsaurabh.com/)
 
 ![Banner](https://raw.githubusercontent.com/binaryshrey/Portfolio/refs/heads/main/banner.png)
 
