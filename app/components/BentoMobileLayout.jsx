@@ -106,13 +106,13 @@ const BentoMobileLayout = () => {
         ariaLabel="Open shreyanshsaurabh.com"
         className="p-3 h-64 flex flex-col justify-between cursor-pointer"
       >
-        <div className="rounded-xl overflow-hidden">
+        <div className="rounded-xl overflow-hidden h-40">
           <Image
             src="/portfolio.webp"
             alt="portfolio"
             width={400}
             height={200}
-            className="w-full h-40 object-cover"
+            className="w-full h-full object-cover object-top"
           />
         </div>
         <h2 className="text-xl font-medium mt-2">My Portfolio</h2>

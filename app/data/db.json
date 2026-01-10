@@ -11,12 +11,56 @@
     "Substack": "https://substack.com/@shreyanshsaurabh",
     "Spotify": "https://open.spotify.com/playlist/5iXLfeB49XFrpI27b8xBGb?si=bedb54fead154563"
   },
-  "description1": "Thrilled to have you here! I'm MS in Computer Engineering graduate with a minor in Machine Learning @NYU and a certified full-stack developer with 3+ years of professional & entrepreneurial experience with leading Fortune-100 companies and emerging tech startups. Proficient in Python, JavaScript, React, FastAPI, PostgreSQL and AWS. Passionate about solving complex problems and building impactful web/mobile applications using agile methodologies with a strong interest in leveraging technology to drive innovation in financial services including trading systems, data-driven risk platforms and digital financial products.",
+  "description1": "Thrilled to have you here! I'm MS in Computer Engineering graduate with a minor in Machine Learning @NYU with 3+ years of professional & entrepreneurial experience with leading Fortune-100 companies and emerging tech startups. Proficient in Python, JavaScript, React, FastAPI, PostgreSQL and AWS. Passionate about solving complex problems and building impactful web/mobile applications using agile methodologies with a strong interest in leveraging technology to drive innovation in financial services including trading systems, data-driven risk platforms and digital financial products.",
   "description2": "I thrive on tackling complex challenges with analytical rigor, creativity and tenacity. With a collaborative mindset, I work effectively within cross-functional teams to streamline development workflows, ensure clear communication and consistently deliver outstanding outcomes. Combining technical excellence with thoughtful design, I create applications that are both functional and impactful, delivering meaningful user experiences while pushing the boundaries of technology.",
   "description3": "",
   "description4": "",
 
   "contents": [
+    {
+      "name": "DemoDay AI",
+      "description": "Practice Your Pitch, Elevate Your Impact and Secure Your Success!",
+      "link": "https://demo-day-ai.vercel.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/app/assets/demoday-web.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/DemoDay-AI/main/demoday-app/assets/banner_web.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/DemoDay-AI"
+        },
+        {
+          "name": "Web",
+          "uri": "https://demo-day-ai.vercel.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Dec - 2025",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
+    {
+      "name": "Hungr AI",
+      "description": "Food Ingredient Classification and Recipe Recommendation using CNN and Transfer Learning",
+      "link": "https://hungrai-6143.vercel.app/",
+      "imageURI": "https://raw.githubusercontent.com/binaryshrey/Portfolio/main/app/assets/hungr-web.webp",
+      "imageURIMobile": "https://raw.githubusercontent.com/binaryshrey/DemoDay-AI/main/demoday-app/assets/hungrai.webp",
+      "tags": [
+        {
+          "name": "GitHub",
+          "uri": "https://github.com/binaryshrey/Hungr-AI"
+        },
+        {
+          "name": "Web",
+          "uri": "https://hungrai-6143.vercel.app/"
+        }
+      ],
+      "type": "Project",
+      "publishedOn": "Nov - 2025",
+      "readTime": null,
+      "stars": "5+",
+      "downloads": null
+    },
     {
       "name": "Bubbles",
       "description": "Instantly Share & Celebrate Your Magical Moments - with Bubbles album links that pops after 5 mins.",
