@@ -143,7 +143,15 @@ const BentoDesktopLayout = () => {
       </LinkCard>
 
       {/* Main (div -> SpotlightCard) */}
-      <SpotlightCard className="md:col-span-2 p-4 h-64">
+      <SpotlightCard className="md:col-span-2 p-4 h-64 relative">
+        <a
+          href="https://www.nyu.edu/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="absolute top-2 right-2 cursor-pointer"
+        >
+          <Image src="/nyu.svg" alt="NYU" width={40} height={40} />
+        </a>
         <div className="flex mt-8 gap-4">
           <Image
             src="/profile_pic.webp"
@@ -195,21 +203,33 @@ const BentoDesktopLayout = () => {
       {/* Location (div -> SpotlightCard) */}
       <SpotlightCard className="p-4 h-64 overflow-hidden">
         <div className="flex flex-col justify-start items-start h-full overflow-hidden">
-          <div className="relative self-center">
-            <Image
-              src="/vinyl.webp"
-              alt="vinyl"
-              width={120}
-              height={120}
-              className="animate-[spin_4s_linear_infinite]"
-            />
-            <Image
-              src="/piano.webp"
-              alt="piano"
-              width={48}
-              height={48}
-              className="absolute top-9 left-9"
-            />
+          <div className="self-center flex items-center h-[120px]">
+            {/* Album cover */}
+            <div className="relative z-10 w-[100px] h-[100px] rounded-lg overflow-hidden shadow-lg flex-shrink-0 border-2 border-white/10">
+              <Image
+                src="/cover.webp"
+                alt="album cover"
+                fill
+                className="object-cover"
+              />
+            </div>
+            {/* Vinyl disc - overlapping behind album cover */}
+            <div className="-ml-8 z-0 flex-shrink-0 relative">
+              <Image
+                src="/vinyl.webp"
+                alt="vinyl"
+                width={110}
+                height={110}
+                className="animate-[spin_4s_linear_infinite]"
+              />
+              <Image
+                src="/piano.webp"
+                alt="piano"
+                width={44}
+                height={44}
+                className="absolute top-[33px] left-[33px] z-10 rounded-full"
+              />
+            </div>
           </div>
           <h2 className="text-lg font-medium pt-3">Now Listening</h2>
           <h2 className="text-sm font-medium text-zinc-400">
@@ -220,7 +240,7 @@ const BentoDesktopLayout = () => {
               onClick={() =>
                 window.open(
                   "https://open.spotify.com/track/14rZjW3RioG7WesZhYESso?si=f3ae9d652f364c38",
-                  "_blank"
+                  "_blank",
                 )
               }
               className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white hover:cursor-pointer"
