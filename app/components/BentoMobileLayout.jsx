@@ -116,7 +116,7 @@ const BentoMobileLayout = () => {
       >
         <div className="rounded-xl overflow-hidden h-40">
           <Image
-            src="/portfolio.webp"
+            src="/spring.webp"
             alt="portfolio"
             width={400}
             height={200}
