@@ -86,7 +86,7 @@ const BentoDesktopLayout = () => {
       >
         <div className="rounded-xl overflow-hidden">
           <Image
-            src="/spring.webp"
+            src="/sp.webp"
             alt="portfolio"
             width={400}
             height={200}
