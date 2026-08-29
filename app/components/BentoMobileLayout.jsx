@@ -81,14 +81,14 @@ const BentoMobileLayout = () => {
           />
           <div>
             <h2 className="text-2xl font-medium">Shreyansh Saurabh</h2>
-            <div className="mt-1 flex flex-col gap-1 text-sm text-[#808080]">
+            <div className="mt-1 flex flex-col gap-1 text-xs text-[#808080]">
               <p className="flex items-center gap-2">
                 <RiGraduationCapFill size={14} className="shrink-0" />
                 MSCE @New York University
               </p>
               <p className="flex items-center gap-2">
                 <RiBriefcaseFill size={14} className="shrink-0" />
-                StarSling (YC 25), Bank of America
+                StarSling (YC 25) · Bank of America
               </p>
             </div>
           </div>
@@ -143,7 +143,7 @@ const BentoMobileLayout = () => {
             className="w-full h-full object-cover object-top"
           />
         </div>
-        <h2 className="text-xl font-medium mt-2">My Portfolio</h2>
+        <h2 className="text-xl font-medium mt-2">Portfolio</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
             <RiGlobalLine size={12} />
@@ -155,11 +155,12 @@ const BentoMobileLayout = () => {
 
       {/* Background (div -> SpotlightCard) */}
       <SpotlightCard className="p-3 h-64 flex flex-col">
-        <h2 className="text-xl font-medium">My Background</h2>
+        <h2 className="text-xl font-medium">Background</h2>
         <p className="text-sm text-neutral-400 mt-4">
-          New York University graduate with 3+ years of professional &
-          entrepreneurial experience with leading Fortune-100 companies and
-          emerging tech startups.
+          FullStack Software Developer and New York University graduate student
+          with experience shipping scalable & user-centric products at Bank of
+          America and most recently an efficient agent-first CLI for CI at
+          StarSling (YC 25).
         </p>
       </SpotlightCard>
 
@@ -180,7 +181,7 @@ const BentoMobileLayout = () => {
             className="w-full h-40 object-cover"
           />
         </div>
-        <h2 className="text-xl font-medium mt-2">My Workspace</h2>
+        <h2 className="text-xl font-medium mt-2">Workspace</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
             <RiGlobalLine size={12} />
@@ -208,7 +209,7 @@ const BentoMobileLayout = () => {
               className="w-full h-40 object-cover"
             />
           </div>
-          <h2 className="text-xl font-medium mt-2">My Blogs</h2>
+          <h2 className="text-xl font-medium mt-2">Blogs</h2>
           <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
             <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
               <RiGlobalLine size={16} />
@@ -297,7 +298,7 @@ const BentoMobileLayout = () => {
             </div>
           </div>
           <h2 className="text-lg font-medium pt-3">Now Listening</h2>
-          <h2 className="text-sm font-medium text-zinc-400">
+          <h2 className="text-[13px] font-medium text-zinc-400">
             Comptine d'un autre été, l'après-midi
           </h2>
           <div className="text-sm mt-3 opacity-70 group-hover:opacity-100 transition flex gap-2">
