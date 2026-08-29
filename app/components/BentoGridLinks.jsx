@@ -6,6 +6,8 @@ export const LINKS = {
   PORTFOLIO: "https://shreyanshsaurabh.com/home",
   GITHUB_PROFILE: "https://github.com/binaryshrey",
   HASHNODE: "https://shreyanshsaurabh.hashnode.dev/",
+  PINNED_BLOG:
+    "https://starsling.dev/blog/introducing-sling-an-agent-first-cli-for-your-ci",
   CAL: "https://cal.com/shreyanshsaurabh",
   GITHUB: "https://github.com/binaryshrey",
   LINKEDIN: "https://www.linkedin.com/in/shreyanshsaurabh/",

@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@remixicon/react": "^4.9.0",
     "@vercel/analytics": "^1.6.1",
     "aos": "^2.3.4",
     "clsx": "^2.1.1",

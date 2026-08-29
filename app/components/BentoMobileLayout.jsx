@@ -2,14 +2,17 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { Volume2, VolumeOff } from "lucide-react";
 import {
-  Globe,
-  ArrowUpRight,
-  VolumeOff,
-  Volume2,
-  GraduationCap,
-  BriefcaseBusiness,
-} from "lucide-react";
+  RiArrowRightUpLine,
+  RiBriefcaseFill,
+  RiGithubFill,
+  RiGlobalLine,
+  RiGraduationCapFill,
+  RiLinkedinFill,
+  RiPushpinFill,
+  RiTwitterFill,
+} from "@remixicon/react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
 import GithubGraph from "./GithubGraph";
@@ -80,11 +83,11 @@ const BentoMobileLayout = () => {
             <h2 className="text-2xl font-medium">Shreyansh Saurabh</h2>
             <div className="mt-1 flex flex-col gap-1 text-sm text-[#808080]">
               <p className="flex items-center gap-2">
-                <GraduationCap size={14} className="shrink-0" />
+                <RiGraduationCapFill size={14} className="shrink-0" />
                 MSCE @New York University
               </p>
               <p className="flex items-center gap-2">
-                <BriefcaseBusiness size={14} className="shrink-0" />
+                <RiBriefcaseFill size={14} className="shrink-0" />
                 StarSling (YC 25), Bank of America
               </p>
             </div>
@@ -114,9 +117,9 @@ const BentoMobileLayout = () => {
           <h2 className="text-xl font-medium mt-2">Preaching Mindfulness ☘️</h2>
           <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
             <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-              <Globe size={12} />
+              <RiGlobalLine size={12} />
               <p className="text-sm">substack.com</p>
-              <ArrowUpRight size={12} />
+              <RiArrowRightUpLine size={12} />
             </div>
           </div>
         </div>
@@ -143,9 +146,9 @@ const BentoMobileLayout = () => {
         <h2 className="text-xl font-medium mt-2">My Portfolio</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-            <Globe size={12} />
+            <RiGlobalLine size={12} />
             <p>shreyanshsaurabh.com</p>
-            <ArrowUpRight size={12} />
+            <RiArrowRightUpLine size={12} />
           </div>
         </div>
       </LinkCard>
@@ -180,39 +183,60 @@ const BentoMobileLayout = () => {
         <h2 className="text-xl font-medium mt-2">My Workspace</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-            <Globe size={12} />
+            <RiGlobalLine size={12} />
             <p>github.com</p>
-            <ArrowUpRight size={12} />
+            <RiArrowRightUpLine size={12} />
           </div>
         </div>
       </LinkCard>
 
       {/* Hashnode */}
-      <LinkCard
-        href={LINKS.HASHNODE}
-        target="_blank"
-        rel="noopener noreferrer"
-        ariaLabel="Open hashnode.com"
-        className="p-3 h-64 flex flex-col justify-between cursor-pointer"
-      >
-        <div className="rounded-xl overflow-hidden">
-          <Image
-            src="/blog.webp"
-            alt="blogs"
-            width={400}
-            height={200}
-            className="w-full h-40 object-cover"
-          />
-        </div>
-        <h2 className="text-xl font-medium mt-2">My Blogs</h2>
-        <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
-          <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-            <Globe size={16} />
-            <p>hashnode.com</p>
-            <ArrowUpRight size={16} />
+      <div className="relative">
+        <LinkCard
+          href={LINKS.HASHNODE}
+          target="_blank"
+          rel="noopener noreferrer"
+          ariaLabel="Open hashnode.com"
+          className="p-3 h-64 flex flex-col justify-between cursor-pointer"
+        >
+          <div className="rounded-xl overflow-hidden">
+            <Image
+              src="/blog.webp"
+              alt="blogs"
+              width={400}
+              height={200}
+              className="w-full h-40 object-cover"
+            />
           </div>
-        </div>
-      </LinkCard>
+          <h2 className="text-xl font-medium mt-2">My Blogs</h2>
+          <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
+            <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
+              <RiGlobalLine size={16} />
+              <p>hashnode.com</p>
+              <RiArrowRightUpLine size={16} />
+            </div>
+          </div>
+        </LinkCard>
+
+        <a
+          href={LINKS.PINNED_BLOG}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Pinned post: Introducing sling, an agent-first CLI for your CI"
+          className="absolute left-[38%] right-3 top-3 z-10 rounded-md border border-[#404040] bg-[#262626] px-3.5 pt-3.5 pb-5 text-white shadow-lg shadow-black/50"
+        >
+          <RiPushpinFill
+            size={20}
+            className="absolute -top-2 -right-1 -rotate-6 text-[#e5484d] drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)]"
+          />
+          <p className="text-[13px] font-medium leading-snug">
+            Introducing sling: an agent-first CLI for your CI
+          </p>
+          <span className="mt-1.5 block text-[11px] font-medium opacity-60">
+            starsling.dev
+          </span>
+        </a>
+      </div>
 
       {/* Cal */}
       <LinkCard
@@ -234,9 +258,9 @@ const BentoMobileLayout = () => {
         <h2 className="text-xl font-medium">Let&#39;s Talk!</h2>
         <div className="text-sm mt-4 opacity-70 group-hover:opacity-100 transition">
           <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white">
-            <Globe size={12} />
+            <RiGlobalLine size={12} />
             <p>cal.com</p>
-            <ArrowUpRight size={12} />
+            <RiArrowRightUpLine size={12} />
           </div>
         </div>
       </LinkCard>
@@ -286,9 +310,9 @@ const BentoMobileLayout = () => {
               }
               className="inline-flex items-center gap-1 px-2 py-1 bg-[#404040] rounded-xl text-white hover:cursor-pointer"
             >
-              <Globe size={16} />
+              <RiGlobalLine size={16} />
               <p>spotify.com</p>
-              <ArrowUpRight size={16} />
+              <RiArrowRightUpLine size={16} />
             </div>
             <div>
               <div
@@ -317,12 +341,7 @@ const BentoMobileLayout = () => {
               >
                 <div className="flex items-center gap-2">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
-                    <Image
-                      src="/github.svg"
-                      alt="GitHub"
-                      width={12}
-                      height={12}
-                    />
+                    <RiGithubFill size={18} />
                   </span>
                   <p>Github</p>
                 </div>
@@ -337,12 +356,7 @@ const BentoMobileLayout = () => {
               >
                 <div className="flex items-center gap-2">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
-                    <Image
-                      src="/linkedin.svg"
-                      alt="LinkedIn"
-                      width={12}
-                      height={12}
-                    />
+                    <RiLinkedinFill size={18} />
                   </span>
                   <p>LinkedIN</p>
                 </div>
@@ -357,12 +371,7 @@ const BentoMobileLayout = () => {
               >
                 <div className="flex items-center gap-2">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[#404040]">
-                    <Image
-                      src="/twitter.svg"
-                      alt="Twitter"
-                      width={12}
-                      height={12}
-                    />
+                    <RiTwitterFill size={18} />
                   </span>
                   <p>Twitter - X</p>
                 </div>
