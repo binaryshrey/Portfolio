@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
-import AudioPill from "./AudioPill";
+import GithubGraph from "./GithubGraph";
 import LINKS from "./BentoGridLinks";
 
 const BentoMobileLayout = () => {
@@ -90,7 +90,7 @@ const BentoMobileLayout = () => {
             </div>
           </div>
         </div>
-        <AudioPill src="" height={24} />
+        <GithubGraph />
       </SpotlightCard>
 
       {/* Substack */}

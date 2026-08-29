@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
-import AudioPill from "./AudioPill";
+import GithubGraph from "./GithubGraph";
 import LINKS from "./BentoGridLinks";
 
 const BentoDesktopLayout = () => {
@@ -187,7 +187,7 @@ const BentoDesktopLayout = () => {
             </div>
           </div>
         </div>
-        <AudioPill src="" />
+        <GithubGraph />
       </SpotlightCard>
 
       {/* Hashnode */}
