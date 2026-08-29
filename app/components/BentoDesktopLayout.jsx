@@ -2,7 +2,14 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import { Globe, ArrowUpRight, VolumeOff, Volume2 } from "lucide-react";
+import {
+  Globe,
+  ArrowUpRight,
+  VolumeOff,
+  Volume2,
+  GraduationCap,
+  BriefcaseBusiness,
+} from "lucide-react";
 import LinkCard from "./LinkCard";
 import SpotlightCard from "./SpotlightCard";
 import AudioPill from "./AudioPill";
@@ -143,29 +150,39 @@ const BentoDesktopLayout = () => {
       </LinkCard>
 
       {/* Main (div -> SpotlightCard) */}
-      <SpotlightCard className="md:col-span-2 p-4 h-64 relative">
+      <SpotlightCard className="md:col-span-2 p-4 h-64 relative flex flex-col justify-between">
         <a
           href="https://www.nyu.edu/"
           target="_blank"
           rel="noopener noreferrer"
           className="absolute top-2 right-2 cursor-pointer"
         >
-          <Image src="/nyu.svg" alt="NYU" width={40} height={40} />
+          <Image
+            src="/nyu.svg"
+            alt="NYU"
+            width={40}
+            height={40}
+            className="brightness-0 invert"
+          />
         </a>
-        <div className="flex mt-8 gap-4">
+        <div className="flex items-center gap-4">
           <Image
             src="/profile_pic.webp"
             alt="Shreyansh Saurabh"
             width={120}
             height={120}
-            className="rounded-2xl mb-3"
+            className="rounded-2xl"
           />
-          <div className="flex flex-col justify-between mb-4">
-            <div />
-            <div>
-              <h2 className="text-4xl font-medium">Shreyansh Saurabh</h2>
-              <p className="text-lg text-normal text-[#808080]">
-                MSCE @NYU &#39;27
+          <div>
+            <h2 className="text-4xl font-medium">Shreyansh Saurabh</h2>
+            <div className="mt-1 flex flex-col gap-1 text-lg text-[#808080]">
+              <p className="flex items-center gap-2">
+                <GraduationCap size={16} className="shrink-0" />
+                MSCE @New York University
+              </p>
+              <p className="flex items-center gap-2">
+                <BriefcaseBusiness size={16} className="shrink-0" />
+                StarSling (YC 25), Bank of America
               </p>
             </div>
           </div>
