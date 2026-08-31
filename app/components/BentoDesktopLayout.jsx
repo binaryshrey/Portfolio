@@ -27,6 +27,9 @@ const BentoDesktopLayout = () => {
     audioRef.current = new Audio("/song.mp3");
     audioRef.current.loop = true;
     audioRef.current.muted = true;
+    // The track is 5.7 MB and starts muted, and both layouts mount at once, so
+    // preloading downloads it twice for nothing. Wait for the unmute tap.
+    audioRef.current.preload = "none";
 
     // Cleanup on unmount
     return () => {
@@ -252,6 +255,7 @@ const BentoDesktopLayout = () => {
                 src="/cover.webp"
                 alt="album cover"
                 fill
+                sizes="100px"
                 className="object-cover"
               />
             </div>
