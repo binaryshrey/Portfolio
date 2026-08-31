@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { Component, useCallback, useState } from "react";
 import dynamic from "next/dynamic";
 
 const BLOCK_MARGIN = 2;
@@ -11,6 +11,31 @@ const MAX_WEEKS = 52;
 const GRAPH_HEIGHT = 7 * NOMINAL_PITCH - BLOCK_MARGIN;
 
 const Placeholder = () => <div style={{ height: GRAPH_HEIGHT }} />;
+
+const ErrorNote = () => (
+  <div
+    style={{ height: GRAPH_HEIGHT }}
+    className="flex items-center text-xs text-neutral-500"
+  >
+    Couldn&#39;t load contributions
+  </div>
+);
+
+// react-activity-calendar validates its data during render and throws on
+// anything unexpected — an empty list, a payload without `contributions`, a
+// malformed day. Those throws are synchronous, so without a boundary a bad
+// response from the contributions API takes the whole page down.
+class CalendarBoundary extends Component {
+  state = { failed: false };
+
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+
+  render() {
+    return this.state.failed ? <ErrorNote /> : this.props.children;
+  }
+}
 
 // The calendar derives its skeleton from the current date and fetches on the
 // client, so server and client markup can never agree. Load it client-side only
@@ -28,7 +53,11 @@ const toISODate = (date) =>
 // Keep the most recent `weeks` whole columns and drop everything older, so the
 // graph always ends on today.
 const keepRecentWeeks = (weeks) => (data) => {
-  if (!weeks || data.length === 0) return data;
+  // The API can answer 200 with a body that has no usable contributions. Hand
+  // back an empty list so the boundary above renders the fallback instead of
+  // letting a TypeError escape.
+  if (!Array.isArray(data) || data.length === 0) return [];
+  if (!weeks) return data;
 
   const last = new Date(`${data[data.length - 1].date}T00:00:00`);
   const start = new Date(last);
@@ -44,7 +73,14 @@ const GithubGraph = ({ username = "binaryshrey" }) => {
 
   const measureRef = useCallback((node) => {
     if (!node) return;
-    const measure = () => setWidth(node.clientWidth);
+    const measure = () => {
+      const next = node.clientWidth;
+      // Ignore zero-width readings. They happen while the card is display:none
+      // or mid-layout, and dropping back to 0 would unmount the calendar and
+      // restart its fetch — which is how a scroll right after a refresh ends up
+      // hammering the contributions API.
+      if (next > 0) setWidth(next);
+    };
     measure();
     const observer = new ResizeObserver(measure);
     observer.observe(node);
@@ -65,23 +101,25 @@ const GithubGraph = ({ username = "binaryshrey" }) => {
   return (
     <div ref={measureRef} style={{ width: "100%" }}>
       {weeks > 0 ? (
-        <GitHubCalendar
-          username={username}
-          year="last"
-          transformData={keepRecentWeeks(weeks)}
-          colorScheme="dark"
-          theme={{
-            dark: ["#262626", "#0e4429", "#006d32", "#26a641", "#39d353"],
-          }}
-          blockSize={blockSize}
-          blockMargin={BLOCK_MARGIN}
-          blockRadius={2}
-          showColorLegend={false}
-          showTotalCount={false}
-          showMonthLabels={false}
-          showWeekdayLabels={false}
-          errorMessage="Couldn't load contributions"
-        />
+        <CalendarBoundary>
+          <GitHubCalendar
+            username={username}
+            year="last"
+            transformData={keepRecentWeeks(weeks)}
+            colorScheme="dark"
+            theme={{
+              dark: ["#262626", "#0e4429", "#006d32", "#26a641", "#39d353"],
+            }}
+            blockSize={blockSize}
+            blockMargin={BLOCK_MARGIN}
+            blockRadius={2}
+            showColorLegend={false}
+            showTotalCount={false}
+            showMonthLabels={false}
+            showWeekdayLabels={false}
+            errorMessage="Couldn't load contributions"
+          />
+        </CalendarBoundary>
       ) : (
         <Placeholder />
       )}
